@@ -42,6 +42,12 @@ const App = () => {
     }
   }
 
+  // concatinate_array = 
+
+  const update_object = () => {
+
+  }
+
   return (
     <div>
 
@@ -69,8 +75,7 @@ const App = () => {
           })
         }
       </div>
-      <br />
-      Append Array: &nbsp;
+      Add to Array: &nbsp;
       <input type="text" onChange={append_array} onKeyUp={(e)=>e.target.value = ""} className="smallInput"/>
       <hr />
 

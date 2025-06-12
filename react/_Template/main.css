@@ -24,17 +24,13 @@ a:hover {
 
 body {
   margin: 0;
-  padding: 20px;
-  padding-top: 0px;
-  /* display: flex;
-  place-items: center; */
+  display: flex;
+  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
 
 h1 {
-  padding: 0px;
-  margin: 10px 0px;
   font-size: 3.2em;
   line-height: 1.1;
 }
@@ -46,8 +42,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: rgb(189, 217, 241);
-  margin: 5px;
+  background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -59,29 +54,6 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-input {
-  line-height: 2em;
-  border-radius: 8px;
-  font-size: 1em;
-  padding-left: 5px;
-}
-
-.array-container {
-  display: flex;
-  align-items: center;
-}
-
-.array-container span {
-  border-radius: 8px;
-  background-color: gold;
-  padding: 5px 10px;
-  margin: 2px;
-}
-
-.smallInput {
-  width: 30px;
-}
-
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -90,7 +62,7 @@ input {
   a:hover {
     color: #747bff;
   }
-  /* button {
+  button {
     background-color: #f9f9f9;
-  } */
+  }
 }
