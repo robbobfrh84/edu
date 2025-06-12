@@ -42,12 +42,10 @@ const App = () => {
     }
   }
 
-
-  const [arrayValue, setArrayValue] = useState('');
   return (
     <div>
 
-      <p> 🔘 Boolean: {bool ? "true" : "false"} {bool ? "☀️" : "🌒"}</p>
+      <p> 🔘 Boolean: {bool ? "true" : "false"} {bool ? "☀️" : "🌒"} </p>
       <button onClick={change_boolean}>Boolean off</button>
       <button onClick={toggle_boolean}>Toggle Boolean</button>
       <hr />
