@@ -5,7 +5,11 @@ const App = () => {
   const [number, setNumber] = useState(0);              // 🔢 Number 
   const [string, setString] = useState("");             // 🧶 "String"
   const [array, setArray] = useState(['a', 'b']);       // 🪗 Array []
-  const [object, setObject] = useState({ x: 0, y: 0 }); // 🐣 Object {}
+  const [object, setObject] = useState({                // 🐣 Object {}
+    name: "Mouse",
+    x: 0, 
+    y: 0 
+  }); 
 
   
   const change_boolean = () => {              // 🔘 Change to a specific Boolean Value
@@ -34,7 +38,6 @@ const App = () => {
     setString("");
   }
 
-
   const append_array = (e) => {               // 🪗 Add an index to an array.
     const value = e.target.value
     if (value !== "") {
@@ -42,12 +45,23 @@ const App = () => {
     }
   }
 
-  // concatinate_array = 
 
-  const update_object = () => {
-
+  const concatenate_array = () => {           // 🪗 Add an index to an array.
+    const toAdd = ['R','G','B'];
+    setArray(array => [...array, ...toAdd]);
   }
 
+  const clear_array = () => {                 // 🪗 Set an array to empty.
+    setArray([]);
+  }
+
+  const update_object = (e) => {              // 🪗 update keys of a object.
+    const x = e.clientX;
+    const y = e.clientY;
+    setObject(prev => ({ ...prev, x, y }))
+  }
+
+  
   return (
     <div>
 
@@ -75,9 +89,17 @@ const App = () => {
           })
         }
       </div>
-      Add to Array: &nbsp;
+      &nbsp; Add to Array: &nbsp;
       <input type="text" onChange={append_array} onKeyUp={(e)=>e.target.value = ""} className="smallInput"/>
+      <button onClick={concatenate_array}>Join to Array: ['R','G','B']</button>
+      <button onClick={clear_array}>Clear</button>
       <hr />
+
+      <p> 🧶 Object: {JSON.stringify(object,null,2)}</p>
+      <div className="object-container" onMouseMove={update_object}>
+        <p> Hover Here</p>
+      </div>
+     
 
     </div>
   )
