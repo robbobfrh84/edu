@@ -1,2 +1,2 @@
 # edu
-Collection of coding demos, walkthroughs and other various learnings 🍎.
+A collection of coding demos, walkthroughs and other various learning resources 🍎.
