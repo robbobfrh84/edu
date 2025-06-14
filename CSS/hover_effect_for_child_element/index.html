@@ -1,15 +1,37 @@
-<!DOCTYPE html><html lang='en'>
+<html>
 
-<head>
-  <meta charset='UTF-8'><meta http-equiv='X-UA-Compatible' content='ie=edge'>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-  <style>
-  
-  </style>
-</head>
+<style>
+.parent {
+  display: inline-block;
+  border: 1px dashed gray;
+  font-size: 25px;
+  padding: 0.5em;
+}
+
+.child {
+  border: 1px solid brown;
+  margin: 1em;
+  padding: 0.5em;
+  transition: all 0.5s;
+}
+
+.parent:hover .child {
+  background: #cef;
+  transform: scale(1.5) rotate(3deg);
+  border: 5px inset brown;
+}
+</style>
 
 <body>
-<!-- TO DO -->
+  <div class="parent">
+    parent
+    <div class="child">
+      child
+    </div>
+  </div>
 </body>
 
 </html>
+
+
+
