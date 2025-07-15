@@ -1,0 +1,36 @@
+/* Navigation */
+.nav {
+  background: #fff;
+  border-bottom: 2px solid #eee;
+  padding: 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.nav li {
+  flex: 1;
+  min-width: 120px;
+}
+
+.nav a {
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+  color: #555;
+  text-align: center;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+.nav a:hover, .nav a.active {
+  background: #f8f9fa;
+  color: #667eea;
+  border-bottom-color: #667eea;
+}

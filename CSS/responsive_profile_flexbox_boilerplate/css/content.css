@@ -1,0 +1,64 @@
+/* Main Content */
+.main-content {
+  flex: 2;
+  min-width: 300px;
+}
+
+.section {
+  background: #fff;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.section h2 {
+  color: #667eea;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.section h3 {
+  color: #555;
+  margin: 1rem 0 0.5rem 0;
+}
+
+.section p {
+  margin-bottom: 1rem;
+  color: #666;
+}
+
+/* Skills */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.skill-tag {
+  background: #667eea;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+/* Experience Cards */
+.experience-item {
+  border-left: 4px solid #667eea;
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.experience-item .date {
+  background: #667eea;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
